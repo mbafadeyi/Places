@@ -17,7 +17,7 @@ class PropertyListCreateView(generics.ListCreateAPIView):
 class PropertyRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Property.objects.all()
     serializer_class = PropertySerializer
-    permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
+    # permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
 
 
 class BookingListCreateView(generics.ListCreateAPIView):

@@ -60,7 +60,8 @@ class Command(BaseCommand):
 
         # Adding Photos
         photo1 = Photo.objects.create(
-            url="https://t4.ftcdn.net/jpg/02/25/42/09/360_F_225420973_xjpxRo4kq1lfICcI6SR5DAhKaUTKw5Zk.jpg",
+            # url="https://t4.ftcdn.net/jpg/02/25/42/09/360_F_225420973_xjpxRo4kq1lfICcI6SR5DAhKaUTKw5Zk.jpg",
+            url="https://media.gettyimages.com/id/165617072/photo/modern-uk-houses.jpg?s=612x612&w=0&k=20&c=h40WA8M51SIrRSx_aHwXNEK4U_C69t7MHbz46xoU3jg=",
             alt_text="Photo 1",
         )
         photo2 = Photo.objects.create(
@@ -68,11 +69,13 @@ class Command(BaseCommand):
             alt_text="Photo 2",
         )
         photo3 = Photo.objects.create(
-            url="https://media.istockphoto.com/id/1284097677/photo/colonial-style-house.jpg?s=612x612&w=0&k=20&c=kZEEFLZeD9f4iSUyb1zY1_wv2XfpncoG1KOOl1FKDcI=",
+            url="https://media.gettyimages.com/id/165617072/photo/modern-uk-houses.jpg?s=612x612&w=0&k=20&c=h40WA8M51SIrRSx_aHwXNEK4U_C69t7MHbz46xoU3jg=",
+            # url="https://media.istockphoto.com/id/1284097677/photo/colonial-style-house.jpg?s=612x612&w=0&k=20&c=kZEEFLZeD9f4iSUyb1zY1_wv2XfpncoG1KOOl1FKDcI=",
             alt_text="Photo 3",
         )
         photo4 = Photo.objects.create(
-            url="https://t3.ftcdn.net/jpg/00/02/61/68/360_F_2616844_1234DNBDVJ78mwkPh0fpUQE1BUH5kP.jpg",
+            url="https://media.gettyimages.com/id/165617072/photo/modern-uk-houses.jpg?s=612x612&w=0&k=20&c=h40WA8M51SIrRSx_aHwXNEK4U_C69t7MHbz46xoU3jg=",
+            # url="https://t3.ftcdn.net/jpg/00/02/61/68/360_F_2616844_1234DNBDVJ78mwkPh0fpUQE1BUH5kP.jpg",
             alt_text="Photo 4",
         )
 
@@ -82,7 +85,7 @@ class Command(BaseCommand):
             title="Beautiful villa in the countryside",
             description="A beautiful villa with pool and Wi-Fi",
             price=120.00,
-            location="Countryside,USA",
+            location="Countryside, USA",
             available_start=timezone.now(),
             available_end=timezone.now() + timezone.timedelta(days=90),
             property_type=property_type1,
@@ -95,7 +98,7 @@ class Command(BaseCommand):
             title="Modern Apartment in the city",
             description="A modern apartment with gym and Wi-Fi",
             price=80.00,
-            location="City,USA",
+            location="City, USA",
             available_start=timezone.now(),
             available_end=timezone.now() + timezone.timedelta(days=60),
             property_type=property_type2,
