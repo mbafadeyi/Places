@@ -1,8 +1,9 @@
-import Head from "next/head";
-import Navbar from "@/components/Navbar";
 import Card from "@/components/Card";
-
+import Navbar from "@/components/Navbar";
+import Head from "next/head";
 import "../app/globals.css";
+import axios from "axios";
+
 export default function Home({ hotels }) {
   return (
     <div>
@@ -25,8 +26,10 @@ export default function Home({ hotels }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:8000/api/properties/");
-  const hotels = await res.json();
+  // const res = await fetch("http://localhost:8000/api/properties/");
+  const res = axios.get("http://localhost:8000/api/properties/");
+  // const hotels = await res.json();
+  const hotels = res.data;
 
   return {
     props: { hotels },
